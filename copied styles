@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;0,900;1,700&display=swap');
-
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-section{
+.homepage{
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -21,6 +19,7 @@ section{
 
 p{
   font-style: italic;
+  font-size: larger;
 }
 
 header{
@@ -28,7 +27,6 @@ header{
    top: 0;
    width: 100%;
    padding: 30px 100px;
-   display: right;
    justify-content: space-between;
    align-items: center;
 }
@@ -36,12 +34,11 @@ header{
 header .container img{
   position: fixed;
   height: auto;
-  left: 0px;
-  width: 100px;
-  size-adjust: 0.5px;
+  left: -1px;
+  width: 150px;
 }
 
-header .nav-bar{
+.nav-bar{
   position: center;
   color: #000000;
   font-size: 20px;
@@ -51,7 +48,7 @@ header .nav-bar{
   letter-spacing: 1px;
 }
 
- header .nav-bar a{
+.nav-bar a{
   float: right;
   color: #000000;
   text-decoration: none;
@@ -61,44 +58,44 @@ header .nav-bar{
   border-radius: 20px;
   transition: 0.3s;
   transition-property: background;
- }
+}
 
- header .navigation a:not(:last-child){
-    margin-right: 30px; 
- }
+.navigation a:not(:last-child){
+  margin-right: 30px; 
+}
 
- header .nav-bar a:hover{
+.nav-bar a:hover{
   background: rgb(255, 245, 191);
- }
+}
 
- .content{
+.content{
   max-width: 650px;
   margin: 60px 100px;
- }
+}
 
- .content .info h2{
-  color: #fff;
-  font-size: 40px;
+.content .info h2{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
   text-transform: uppercase;
   font-weight: 800px;
   letter-spacing: 2px;
   line-height: 60px;
   margin-bottom: 30px;
- }
+}
 
- .content .info h2 span{
+.content .info h2 span{
   color: #fff;
   font-size: 50px;
   font-weight: 600;
- }
+}
 
- .content .info p{
-  font-size: 16px;
+.content .info p{
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 40px;
- }
+}
 
- .content .info-btn{
+.info-btn{
   color: #fff;
   background: #154174;
   text-decoration: none;
@@ -109,68 +106,69 @@ header .nav-bar{
   border-radius: 5px;
   transition: 0.3s;
   transition-property: background;
- }
+}
 
- .content .info-btn:hover{
+.info-btn:hover{
   background: #2e64a2;
- }
+}
 
- .media-icons{
+.media-icons{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
- }
+  margin: 193px;
+}
 
- .media-icons a{
+.media-icons a{
   position: relative;
   color: #ffffff;
   font-size: 25px;
   transition: 0.3s;
   transition-property: transform;
- }
+}
 
- .media-icons a:not(:last-child){
+.media-icons a:not(:last-child){
   margin-right: 60px;
- }
+}
 
- .media-icons a:hover{
+.media-icons a:hover{
   transform: scale(1.5);
- }
+}
 
- label{
+label{
   display: none;
- }
+}
 
- #check{
+#check{
   z-index: 3;
   display: none;
- }
+}
 
- /* Responsive style */
+/* Responsive style */
 
- @media (max-width: 960px){
-  header .navigation{
-    display: none;
-  }
+@media (max-width: 960px);
+  
+.navigation{
+  display: none;
+}
 
-  label{
+label{
     display: block;
     font-size: 25px;
     cursor: pointer;
     transition: 0.3s;
     transition-property: color;
-  }
+}
 
-  label:hover{
+hover{
     color: #fff;
-  }
+}
 
-  label .close-btn{
+label .close-btn{
     display: none;
-  }
+}
 
-  #check:checked ~header .nav-bar {
+#check:checked ~header .nav-bar{
     z-index: 2;
     position: fixed;
     background: #ffe11b;
@@ -182,66 +180,101 @@ header .nav-bar{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  #check:checked ~header .nav-bar a{
+#check:checked ~header .nav-bar a{
     font-weight: 700;
     margin-right: 0;
     margin-bottom: 50px;
     letter-spacing: 2px;
- }
+}
 
- #check:checked ~ header label .menu-btn{
+#check:checked ~ header label .menu-btn{
   display: none;
- }
+}
 
- #check:checked ~ header label .close-btn{
+#check:checked ~ header label .close-btn{
   z-index: 2;
   display: block;
   position: fixed;
- }
+}
 
- label .menu-btn{
+label .menu-btn{
   position: absolute;
   top: 34px;
   right: -105px;
   width: 200px;
- }
+}
 
- header .logo{
+header .logo{
   position: absolute;
   bottom: -6px;
-  font-size: 100px;
-  color: red;
- }
+  font-size: 00px;
+}
 
- .content .info h2{
-  font-size: 45px;
+.content .info h2{
+  font-size: 55px;
   line-height: 50px;
- }
+}
 
- .content .info h2 span{
+.content .info h2 span{
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.content .info p{
+  font-size: 14px;
+}
+
+@media (max-width: 560px);
+ 
+.content .info h2{
+  font-size: 55px;
+  line-height: 40px;
+}
+
+.content .info h2 span{
   font-size: 40px;
   font-weight: 600;
- }
-
- .content .info p{
-  font-size: 14px;
- }
 }
 
-@media (max-width: 560px){
- .content .info h2{
-  font-size: 35px;
-  line-height: 40px;
- }
-
- .content .info h2 span{
-  font-size: 30px;
-  font-weight: 600;
- }
-
- .content .info p{
-  font-size: 14px;
- }
+.content .info p{
+  font-size: 20px;
 }
+
+/*css for About page*/
+
+.about-page{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url(images/yellow.png)no-repeat;
+  background-size: cover;
+}
+
+.title{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.title h1{
+  font-size: 40px;
+}
+
+.flex .about-info{
+  width: 100%;
+  display: contents;
+}
+
+.flex .about-info .map{
+  width: 400px;  
+  height: 400px;
+  display: flex;
+}
+
+
+
